@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+    height: 200vh;
+    background-color: rgb(167, 152, 114);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color:rgb(0, 0, 0) ;
+}
+    
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    align-items: center;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 60px;
+}
+ 
+.cabecalho-menu-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+    text-decoration: none;
+}
+
+    .titulo-destaque {
+            color:rgb(0, 0, 0) ;
+    }
+    
+    .conteudo {
+            height: auto;
+            flex-direction: column;
+            margin: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+    
+    .apresentacao-conteudo {
+            width: 500px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            margin: 10%;
+           align-items: center;
+           text-align: justify;
+           height: auto;
+           order: 2;
+        }
+     
+        .apresentacao-conteudo-texto {
+            font-size: 22px;
+        }
+    
+    .apresentacao-conteudo-titulo {
+            font-size: 50px;
+            font-family: 'Lora', serif;
+            text-align: justify;
+            margin: 15%;
+     }
+    
+    
+    .apresentacao-conteudo-paragrafo {
+            font-size: 70px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify; 
+          
+             }
+    
+    .apresentacao-links {
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            gap: 20px;
+    }
+
+    .apresentacao-links-conteudo {
+       font-family: 'krona one' , sans-serif;
+       font-weight: 400;
+       font-size: 24px;
+    }
+    
+    
+    
+
+    .rodape{
+        color: rgb(77, 75, 75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'krona one', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px;   
+
+    }
+
+
+    .rodape a:hover {
+        color: #ff078f;
+        
+    }
+    
+    

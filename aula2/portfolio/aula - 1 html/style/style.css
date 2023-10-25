@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #000000, rgb(85, 68, 42), #000000);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    color: rgb(255, 254, 254);
+}
+    
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+    align-items: center;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 80px;
+}
+ 
+.cabecalho-menu-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+    .titulo-destaque {
+            color:#ffffff;
+    }
+    
+    .conteudo {
+            height: auto;
+            flex-direction: column;
+            margin: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+    
+    .apresentacao-conteudo {
+            width: 550px;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+           align-items: center;
+           text-align: justify;
+           height: auto;
+           order: 2;
+        }
+    
+    
+    .apresentacao-conteudo-titulo {
+            font-size: 80px;
+            font-family: 'Lora', serif;
+            text-align: justify;
+     }
+    
+    
+    .apresentacao-conteudo-paragrafo {
+            font-size: 25px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: justify; 
+             }
+    
+    .apresentacao-links {
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            width: 500px;
+            gap: 20px;
+    }
+
+    .apresentacao-links-conteudo {
+       font-family: 'krona one' , sans-serif;
+       font-weight: 400;
+       font-size: 24px;
+    }
+    
+    .botao1 {
+        /* Define a cor de fundo como preto */
+        background-color: #000;
+    
+        /* Define a cor do texto como laranja */
+        color: #ff5500;
+    
+        /* Define a largura do elemento como 500px */
+        width: 500px;
+    
+        /* Define a altura do elemento como 80px */
+        height: 80px;
+    
+        /* Alinha o texto ao centro horizontalmente */
+        text-align: center;
+    
+        /* Alinha os itens verticalmente ao centro */
+        align-items: center;
+    
+        /* Adiciona uma borda de 2px sólida laranja */
+        border: 2px solid #ff5500;
+    
+        /* Define um raio de borda de 50px para criar um botão circular */
+        border-radius: 50px;
+    
+        /* Define o tamanho da fonte como 36px */
+        font-size: 36px;
+    
+        /* Adiciona preenchimento de 15px vertical e 0 horizontal */
+        padding: 15px 0;
+    
+        /* Remove a decoração de texto (sublinhado) */
+        text-decoration: none;
+    
+        /* Define a família de fontes como 'Rock Salt' com fallback para cursive */
+        font-family: 'Rock Salt', cursive;
+    
+        /* Define um espaçamento entre as letras */
+        letter-spacing: 2px;
+    
+        /* Transforma o texto em letras maiúsculas */
+        text-transform: uppercase;
+    
+        /* Define a posição como relativa para uso de posicionamento absoluto */
+        position: relative;
+    
+        /* Define o overflow como escondido para recortar conteúdo extra */
+        overflow: hidden;
+    }
+    
+    
+    /* Pseudo-elemento ::before para elementos com a classe .botao1 */
+    .botao1::before {
+        /* Adiciona um conteúdo vazio ao pseudo-elemento */
+        content: "";
+    
+        /* Define a posição como absoluta para posicionamento personalizado */
+        position: absolute;
+    
+        /* Define a posição superior do pseudo-elemento como 0 */
+        top: 0;
+    
+        /* Define a posição esquerda do pseudo-elemento como -100% (fora da tela) */
+        left: -100%;
+    
+        /* Define a largura do pseudo-elemento como 100% */
+        width: 100%;
+    
+        /* Define a altura do pseudo-elemento como 100% */
+        height: 100%;
+    
+        /* Cria um gradiente linear de 45 graus para o fundo do pseudo-elemento */
+        background: linear-gradient(45deg, transparent, #ff5500);
+    
+        /* Adiciona uma transição suave de 0.5 segundos */
+        transition: 0.5s;
+    }
+    
+    /* Pseudo-elemento ::before ao passar o mouse sobre elementos com a classe .botao1 */
+    .botao1:hover::before {
+        /* Move o pseudo-elemento completamente para a direita */
+        left: 100%;
+    }
+    
+    /* Elemento <i> dentro de elementos com a classe .botao1 */
+    .botao1 i {
+        /* Define a posição como absoluta para posicionamento personalizado */
+        position: absolute;
+    
+        /* Centraliza horizontalmente na metade do elemento pai */
+        left: 50%;
+    
+        /* Centraliza verticalmente na metade do elemento pai */
+        top: 50%;
+    
+        /* Move o elemento <i> 50% para a esquerda e 50% para cima */
+        transform: translate(-50%, -50%);
+    
+        /* Define o tamanho da fonte como 60px */
+        font-size: 60px;
+    }
+    
+    .botao2 {
+        background-color: #000;
+        color: #0077B5; /* Cor padrão do LinkedIn */
+        width: 500px;
+        height: 80px;
+        align-items: center;
+        text-align: center;
+        border: 2px solid #0077B5;
+        border-radius: 50px;
+        font-size: 36px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao2::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #0077B5);
+        transition: 0.5s;
+    }
+    
+    .botao2:hover::before {
+        left: 100%;
+    }
+    
+    .botao2 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .botao3 {
+        background-color: #000;
+        align-items: center;
+        color: #333; /* Cor padrão do GitHub */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #333;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao3::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #333);
+        transition: 0.5s;
+    }
+    
+    .botao3:hover::before {
+        left: 100%;
+    }
+    
+    .botao3 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .botao5 {
+        background-color: #000;
+        align-items: center;
+        color: #b61ca9; /* Cor padrão do Instagram */
+        width: 500px;   
+        height: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid#b61ca9;
+        border-radius: 50px;
+        font-size: 24px;
+        padding: 15px 0;
+        text-decoration: none;
+        font-family: 'Rock Salt', cursive;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .botao5::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, #2a0887);
+        transition: 0.5s;
+    }
+    
+    .botao5:hover::before {
+        left: 100%;
+    }
+    
+    .botao5 i {
+        position: absolute;
+        font-size: 60px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .imagem {
+        max-width: 50%;
+        width: auto;
+        max-height: 300%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    
+
+    .rodape{
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: 'krona one', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px;   
+    }
+    .rodape a:hover {
+        color: #fbff07;
+        
+    }
+    
+    
